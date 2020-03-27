@@ -1,0 +1,177 @@
+<!-- <html>
+    <head>
+        <script type="text/javascript">
+            
+            /*document.write("Hello World");
+            alert('Hi');
+            var Name="Akshat";
+            console.log(Name);*/
+
+            /*var x="10",y=20;  Challenge 6
+            alert(parseInt(x)+y);
+
+            var fruits=['Apple', 'Banana', 'Grape', 'Mango','Papaya'] ;
+            alert(fruits[1]);
+            fruits.push('Green');
+            document.write(fruits);
+            fruits.pop();
+            document.write(fruits);*/
+
+        /*    var age=32;
+
+            if(age>18)
+            {
+                document.write("You are eligible to vote.")
+            }
+            else{
+                document.write("You are not eligible to vote.");
+            }
+        */
+
+        //Javascript Challenge 8
+        /*
+            var name="Electronics";
+            var price=300;
+            var amount;
+
+            if (name=="Electronics"){
+                if (price>=100){
+                    amount=price-(price*0.1);
+                }
+            }
+
+            document.write(amount);
+        */
+
+        //Javascript Challenge 9
+
+    /*    var person={
+            name:"Akshat",
+            age:19,
+            gender:"Male"
+        };
+
+
+        if(person.age>=18 && person.gender=="Male"){
+            document.write("Pass");
+        }
+        else{
+            document.write("Fail");
+        }
+        */
+        
+        //Coding challenge 9
+
+        /*for(counter=1;counter<=100;counter++)
+        {
+            document.write(counter+"<br>")
+        }
+
+        var i=1;
+        while(i<=20)
+        {
+            document.write((i*i)+"<br>");
+            i++;
+        }*/
+
+        //Coding Challenge 10
+
+        /*var rating=0;
+
+        switch(rating){
+
+            case 5:document.write("Excellent");break;
+            case 4:document.write("Very Good");break;
+            case 3:document.write("Good");break;
+            case 2:document.write("Okay");break;
+            case 1:document.write("Poor");break;
+            default: document.write("Byeee..");
+
+        }*/
+
+        //Regular Expressions
+
+       /* var s=/apple/i;
+        var sen="I like apple";
+        var x=sen.replace(s,"Banana");
+        document.write(x);*/
+
+        /*var num="12345678901";
+
+        try{
+            
+            if(num.length==10){
+                document.write("Correct");
+            }
+            else{
+                throw("Enter a 10 digit number");
+            }
+        }
+        catch(e)
+        {
+            document.write("<br>Error"+e);
+        }*/
+
+        //DOM Methods
+
+
+        
+
+        </script>
+    </head>
+    
+</html> -->
+
+<!-- Dom Methods-->
+
+<html>
+    <head>
+        <title>DOM Methods</title>
+    </head>
+
+    <body>
+
+        <p id="pr"></p>         <!-- 0 -->
+        <p id="dr"></p>         <!-- 1 -->
+        <p onclick="this.innerHTML='You Clicked here'">Click me</p>
+        <p onclick="this.style.color='blue'">Click me</p>
+        <button id="displayAlert"> Click Me </button>
+
+
+        <button id="btn">Click me</button>
+        <p id="para"></p>
+
+        <input id="inputbox" type="text" placeholder="enter text">
+        <button id="changebtn" type="submit" onclick="li()">Show</button>
+        <br>
+        <label id="lbl" >asdad</label>
+
+        
+
+        <script>
+
+            document.getElementById("pr").innerHTML="This is a paragraph so i can edit it with JS";
+            document.getElementsByTagName("p")[1].innerHTML="This is second paragraph";
+            document.getElementById("pr").style.color="green";
+
+            function displayAlert(){
+                alert("Display Clicked.");
+            }
+
+            document.getElementById("displayAlert").addEventListener("click",displayAlert);
+            function display(){
+                document.getElementById("para").innerHTML="This is paraghraph";
+            }
+
+            document.getElementById("btn").addEventListener("click",display);
+            function li(){
+                var x=document.getElementById("inputbox").value;
+                document.getElementById("lbl").innerHTML=x;
+            }
+
+            document.write(screen.width);
+            document.write(screen.height);
+            document.write(window.location.href);    
+
+        </script>
+</html>

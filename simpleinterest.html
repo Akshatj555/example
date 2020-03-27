@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title> Calculate </title>
+    </head> 
+    <body>
+        <script>
+            
+            function cal(){
+            var p=document.getElementById("principal").value;
+            var r=document.getElementById("rate").value;
+            var t=document.getElementById("time").value;
+            var si=(p*r*t)/100;
+            document.getElementById("displaylbl").innerHTML=si;
+        }
+
+        </script>
+        <div>
+            <label>Principal</label><br>
+            <input id="principal" type="number" placeholder="Enter Principal"><br>
+            <label>Rate</label><br>
+            <input id="rate" type="number" placeholder="Enter Rate"><br>
+            <label>Time</label><br>
+            <input id="time" type="number" placeholder="Enter Time"><br>
+
+            <button onclick="cal()">Calculate</button><br>
+
+            Rs. <label id="displaylbl"> </label>
+
+        </div>
+    </body>
+</html>
